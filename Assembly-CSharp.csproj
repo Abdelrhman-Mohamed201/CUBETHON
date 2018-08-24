@@ -61,9 +61,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\FollowPlayer.cs" />
-    <Compile Include="Assets\PlayerCollision.cs" />
-    <Compile Include="Assets\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\FollowPlayer.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerCollision.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\score.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Work/Projects/htdocs/cube-unity/Cube/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
