@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour {
 
@@ -9,7 +10,8 @@ public class PlayerMovement : MonoBehaviour {
     void Start()
     {
         rb.drag = 1;
-        forwardForce = 4000f;
+        // forwardForce = 4000f * (SceneManager.GetActiveScene().buildIndex + 1);
+        forwardForce = 6000f;
         sidewaysForce = 100f;
     }
 
