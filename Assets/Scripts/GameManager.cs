@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour {
         if (gameHasEnded == false)
         {
             gameHasEnded = true;
-            Debug.Log("GAME OVER!");
 
             // Delay before call Restart function.
             Invoke("Restart", restartDelay);
