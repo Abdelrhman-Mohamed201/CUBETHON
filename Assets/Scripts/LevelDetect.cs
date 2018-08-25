@@ -8,7 +8,7 @@ public class LevelDetect : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        string currentlevel = (SceneManager.GetActiveScene().buildIndex + 1).ToString();
+        string currentlevel = SceneManager.GetActiveScene().buildIndex.ToString();
         levelText.text = "Level " + currentlevel;
     }
 }
