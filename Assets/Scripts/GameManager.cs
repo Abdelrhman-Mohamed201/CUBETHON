@@ -9,6 +9,11 @@ public class GameManager : MonoBehaviour {
     public GameObject player;
     public GameObject ground;
 
+    public void StartGame(int levelSelected)
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + levelSelected);
+    }
+
     public void CompleteLevel()
     {
         player.SetActive(false);
@@ -32,4 +37,8 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
 }
