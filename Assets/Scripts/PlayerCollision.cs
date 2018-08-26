@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
+
 public class PlayerCollision : MonoBehaviour {
 
     public PlayerMovement movement;
