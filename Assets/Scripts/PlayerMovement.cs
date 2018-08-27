@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        Debug.Log(PlayerPrefs.GetFloat("volume"));
         //Debug.Log(FindObjectOfType<GameManager>().level);
         rb.drag = 1;
         // forwardForce = 4000f * (SceneManager.GetActiveScene().buildIndex + 1);
